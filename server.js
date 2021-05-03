@@ -1,7 +1,14 @@
 const express = require('express');
-
+const connectDB= require('./config/db')
 //initialize express in a variable called app
 const app = express();
+
+//Connect Database
+connectDB();
+
+// Init Middleware to use server into users.js
+//this accept data
+app.use(express.json({extended:false}));
 
 app.get('/', (req, res) => res.json({msg:'Hello World'}));
 

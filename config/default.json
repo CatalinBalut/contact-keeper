@@ -1,0 +1,8 @@
+{
+    "mongoURI" : "mongodb+srv://BalutCatalin:admin@cluster0.wower.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret" : "secret"
+}
+
+
+
+
